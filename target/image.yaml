@@ -1,8 +1,8 @@
 artifacts:
-- dest: /deployment/runtime.jar/
+- dest: /deployments/
   name: fuse-apicurito-generator
   sha512: d58de5221068651c5f0c472c3a2666d323fb0760083f0e05726d2c24bd1f64407c3e9fb5409bf2d1b867adb6f9f0d6f5b795aced2c2c0cd6ac19c0442c08e356
-  target: fuse-apicurito-generator
+  target: runtime.jar
   url: http://indy.psi.redhat.com/api/content/maven/group/redhat-builds/org/jboss/redhat-fuse/apicurio/fuse-apicurito-generator/1.0.0.fuse-790028-redhat-00001/fuse-apicurito-generator-1.0.0.fuse-790028-redhat-00001.jar
 description: An Apicurito generator for Fuse Projects
 envs:
@@ -10,7 +10,7 @@ envs:
   value: /deployments
 - name: APICURITO_VERSION
   value: 1.0.0.fuse-790028-redhat-00001
-from: fuse7/fuse-java-openshift-rhel8:1.9
+from: registry-proxy.engineering.redhat.com/rh-osbs/fuse7-fuse-java-openshift-jdk11-rhel8:1.9
 labels:
 - name: com.redhat.component
   value: fuse-apicurito-generator-openshift-rhel-8-container

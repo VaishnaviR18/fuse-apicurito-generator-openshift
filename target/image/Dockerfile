@@ -4,17 +4,17 @@
 
 ## START target image fuse7/fuse-apicurito-generator-rhel8:1.9
 ## \
-    FROM fuse7/fuse-java-openshift-rhel8:1.9
+    FROM registry-proxy.engineering.redhat.com/rh-osbs/fuse7-fuse-java-openshift-jdk11-rhel8:1.9
 
 
     USER root
 
 ###### START image 'fuse7/fuse-apicurito-generator-rhel8:1.9'
 ###### \
-        # Copy 'fuse7/fuse-apicurito-generator-rhel8' image general artifacts to '/deployment/runtime.jar/' destination
+        # Copy 'fuse7/fuse-apicurito-generator-rhel8' image general artifacts to '/deployments/' destination
         COPY \
-            fuse-apicurito-generator \
-            /deployment/runtime.jar/
+            runtime.jar \
+            /deployments/
         # Set 'fuse7/fuse-apicurito-generator-rhel8' image defined environment variables
         ENV \
             APICURITO_VERSION="1.0.0.fuse-790028-redhat-00001" \
