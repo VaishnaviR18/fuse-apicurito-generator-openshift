@@ -1,0 +1,5 @@
+artifacts:
+- name: "fuse-apicurito-generator"
+  sha512: "d58de5221068651c5f0c472c3a2666d323fb0760083f0e05726d2c24bd1f64407c3e9fb5409bf2d1b867adb6f9f0d6f5b795aced2c2c0cd6ac19c0442c08e356"
+  url: "http://indy.psi.redhat.com/api/content/maven/group/redhat-builds/org/jboss/redhat-fuse/apicurio/fuse-apicurito-generator/1.0.0.fuse-790028-redhat-00001/fuse-apicurito-generator-1.0.0.fuse-790028-redhat-00001.jar"
+  dest: "/deployment/runtime.jar"

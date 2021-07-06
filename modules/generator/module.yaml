@@ -1,0 +1,15 @@
+name: generator
+version: 1.0
+description: "Module used to install fuse-apicurito-generator"
+
+artifacts:
+- name: "fuse-apicurito-generator-1.0.0.fuse-790048-redhat-00001.jar"
+  sha512: "2bc0e2256415ccdeb5130d72c5c472d342d51761f90c4ffb23fde68225bf1a8d36f7e31ad7fb2b6be80663d19ccc205d03addf52f224f6393d3c53048a2bd772"
+  url: "http://indy.psi.redhat.com/api/content/maven/group/redhat-builds/org/jboss/redhat-fuse/apicurio/fuse-apicurito-generator/1.0.0.fuse-790048-redhat-00001/fuse-apicurito-generator-1.0.0.fuse-790048-redhat-00001.jar"
+  dest: "/deployment/runtime.jar"
+
+execute:
+- script: install.sh
+
+run:
+  user: 185
